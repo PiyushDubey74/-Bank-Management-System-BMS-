@@ -6,24 +6,31 @@ int main() {
     cout << "Enter score: ";
     cin >> s;
 
+    if (s < 0 || s > 100) {
+        cout << "Invalid score. Please enter a value between 0 and 100." << endl;
+        return 1;
+    }
+
     switch (s / 10) {
-        case 10:
+        case 10: 
         case 9:
-            cout << "Grade: A";
+            cout << "Grade: A" << endl;
             break;
         case 8:
-            cout << "Grade: B";
+            cout << "Grade: B" << endl;
             break;
         case 7:
-            cout << "Grade: C";
+            cout << "Grade: C" << endl;
             break;
         case 6:
-            cout << "Grade: D";
+            cout << "Grade: D" << endl;
             break;
         case 5:
-            cout << "Grade: E";
+            cout << "Grade: E" << endl;
             break;
         default:
-            cout << "Grade: F";
+            cout << "Grade: F" << endl;
     }
+
+    return 0;
 }
